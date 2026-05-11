@@ -37,3 +37,12 @@ Il software segue il principio del **Privacy by Design**, assicurando che la pas
 * [NIST Digital Identity Guidelines](https://pages.nist.gov/800-63-3/) (Standard internazionale per la gestione delle password)
 * [getpass documentation](https://docs.python.org/3/library/getpass.html)
 * [hashlib documentation](https://docs.python.org/3/library/hashlib.html)
+
+
+## 5. Percorso
+
+1) Volevo capire se le password che uso sono già in circolazione o no in data breach pubblici, così ho fatto ricerche e sono venuto a conoscenza dell'API di Have I Been Pwned.
+
+2) Leggendo la documentazione ho capito che inviare la password intera era un rischio per la privacy e non era consentito dall'API, quindi ho studiato e applicato il protocollo sha-1
+
+3) Ho aggiunto la matematica (Entropia) per rendere il tool completo per avere una conferma della sicurezza della password
