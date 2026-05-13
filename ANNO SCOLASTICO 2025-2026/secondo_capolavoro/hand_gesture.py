@@ -7,6 +7,7 @@ import pickle
 import csv
 import os
 
+
 # Setup di MediaPipe per trovare le mani
 base_options = python.BaseOptions(model_asset_path='hand_landmarker.task') #scaricato dai link nel .md direttamente da google
 options = vision.HandLandmarkerOptions(
@@ -208,12 +209,12 @@ def addestra(numero=False):
     cv.destroyAllWindows()
 
 
-def predici():
+def gioca(model="model.pkl"):
     
-    if not os.path.exists('model.pkl'):
+    if not os.path.exists(model):
         return "Model not found"
 
-    with open('model.pkl', 'rb') as f:
+    with open(model, 'rb') as f:
         model = pickle.load(f)
 
     
@@ -271,7 +272,6 @@ def predici():
   
   
   
+
   
-  
-    
-predici()
+gioca()
